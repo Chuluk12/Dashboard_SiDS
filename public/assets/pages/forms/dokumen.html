@@ -1,0 +1,70 @@
+<?= $this->extend('index');?>
+<?= $this->section('content'); ?>
+
+<div class="col-sm-12">
+    <div class="page-title-box">
+        <h4 class="page-title"> Dokumen Standar></h4>
+    </div>
+
+
+
+<div class="col-sm-12">
+    <a href="#" type="button" class="btn btn-primary" ><i class="bi bi-file-earmark-plus"></i >Tambah</a>
+    <br>
+    <div class="swaldata" data-swaldata="<?= session()->get('message');?>"></div> 
+    <!-- <?php if (session()->get('message')):?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    <strong><?= session()->getFlashdata('message');?></strong>
+    </div> 
+    <?php endif;?>-->
+</div>
+    <div class="card-body viewdata" >
+    <div class="table-responsive">
+            <table class="table table-striped table-bordered" id="dataTable2" width="100%" cellspacing="0">
+                <thead class="text-center">
+                <tr>
+                    <th>No.</th>
+                    <th>No. Dokumen</th>
+                    <th>Deskripsi</th>
+                    <th>Revisi</th>
+                    <th>Tanggal</th>
+                    <th>Kategori</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                    <tbody>
+                    
+                            <tr>
+                            <td>1</td>
+                            <td>RNI/G01</td>
+                            <td>Internal Audit</td>
+                            <td>0</td>
+                            <td>01-01-2022</td>
+                            <td>Prosedur</td>
+                            <td>
+                                <a  href="#" class="btn btn-primary btn-sm btn-edit"  ><i class="bi bi-file-earmark-font"></i> </a>
+                            <form action="#" method="post" class="d-inline" target="_BLANK">
+                            
+                            <input type="hidden" name="file">
+                            <button type="submit" class="btn btn-secondary btn-sm" ><i class="bi bi-file-earmark-arrow-up"></i></button>
+                            </form>                            
+                            <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-file-earmark-x" ></i> </button>
+                            </td>
+                            </tr>
+                        
+                    </tbody>
+                                    
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+            <script>
+               
+            
+<?= $this->endSection('content'); ?>
