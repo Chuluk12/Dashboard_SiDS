@@ -217,7 +217,7 @@
 
             <!-- Awal What's On ! -->
 
-        <li class="nav-header">What's On !</li>
+        <!-- <li class="nav-header">What's On !</li> -->
           <li class="nav-item">
             <a href="/admin/program" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
@@ -323,6 +323,7 @@
       "responsive": true,
     });
   });
+  
 </script>
 </body>
 </html>

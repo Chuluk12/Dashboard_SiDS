@@ -13,7 +13,6 @@ public function index()
         
         $cek = $this->tb_usermodel1->where(array('username' => $user))->get()->getRowArray();
         
-
         if($cek)
         {
             $pass = $cek['pass'];
